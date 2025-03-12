@@ -27,6 +27,26 @@
 let value = toCelsius(78);
 document.getElementById("demo").innerHTML = value;
 document.getElementById("demo2").innerHTML = person.fullname();
+let obj ={
+  firstname: "Anees",
+  lastname: "khan",
+  Address: "Lahore",
+  Age:20
+}
+for(let key in obj){
+  document.write(obj[key]);
+}
+//making a object  constunter function
+function Blueprint(Name,last,Adress,age){
+  this.firstname=Name;
+  this.lastname=last;
+  this.Adress=Adress;
+  this.age=age;
+}
+let person1=new Blueprint("Anees","Khan","Lahore",20)
+let person2=new Blueprint("talat","jewwan","Karachi",25)
+console.log(Object.values(person1));
+
   </script>
   
 </script>
