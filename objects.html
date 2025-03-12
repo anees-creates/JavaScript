@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>JavaScript Objects</h1>
+  <p id=demo> </p>
+  <p id="demo2"></p>
+ 
+
+
+
+
+
+  <script>
+    //accessing a object property by storing their names in varaibles outside of objects 
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  age      :  50
+  
+};
+
+let x = "firstName";
+let y = "age";
+document.getElementById("demo").innerHTML = person[x] + " is " + person[y] + " years old.";
+// In this case this will not work(code below) becuse [] are missing outside of variables that hold the
+//object property names
+//document.getElementById("demo").innerHTML = person.x + " is " + person.y + " years old.";wrong
+  
+  
+  </script>
+
+</body>
+</html>

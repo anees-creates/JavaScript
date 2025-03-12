@@ -8,14 +8,25 @@
 <body>
   <h1>JavaScript Functions</h1>
   <p id="demo"></p>
+  <p id="demo2"></p>
 
   <script>
+    const person = {
+      firstName: "Anees", 
+      lastName: "ur  Rehman",
+      age:50,
+      fullname:function(){
+        return  (this.firstName + " " + this.lastName).toUpperCase();
+      }
+      
+    }
     function toCelsius(f) {
   return (5/9) * (f-32);
 }
 
 let value = toCelsius(78);
 document.getElementById("demo").innerHTML = value;
+document.getElementById("demo2").innerHTML = person.fullname();
   </script>
   
 </script>
